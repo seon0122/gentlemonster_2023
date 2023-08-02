@@ -1,0 +1,57 @@
+header {
+    background: aqua;
+    width:calc(100% - 60px); /* full */
+    height: 100px; margin:0 auto;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    width:213px;
+}
+header h1 a {}
+header h1 a img {width:100%;}
+header .h_right {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+header .h_right > * {
+    margin-left: 23px;
+}
+header .h_right .lang {
+    font-size: 20px; font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-left:0;
+}
+header .h_right #searchFrm {
+    width: 313px;
+    border:1px solid #000; border-radius: 10px;
+    background:#EDEDED;
+}
+header .h_right #searchFrm fieldset {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    padding:0 11px;
+}
+header .h_right #searchFrm #searchTxt {
+    padding:7px 0;
+    background: none;
+}
+header .h_right #searchFrm #searchBtn {
+    width:23px; height:23px;
+    background: none;
+}
+header .h_right #searchFrm #searchBtn img {width: 100%;}
+header .h_right {}
+header .h_right a img {}
+header .h_right .login,
+header .h_right .cart,
+header .h_right .nav {width:34px; height: 34px;}
+header .h_right .login {}
+header .h_right .login img {width: 100%;}
+header .h_right .cart {}
+header .h_right .cart img {width: 100%;}
+header .h_right .nav {}
+header .h_right .nav img {width: 100%;}
