@@ -1,3 +1,17 @@
+/* common.css 모든 웹페이지 공통 css == common */
+/* common.css == header, footer 공통영역 Design */
+/* Firefox */
+html {scrollbar-width: 10px;;scrollbar-color: #222 #f1f1f1;}
+/* Opera */
+html::-o-scrollbar {width: 10px;}/*스크롤바 크기*/
+html::-o-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+html::-o-scrollbar-thumb:hover {background-color: #555;}
+/* Chrome, Safari, Edge 등 웹킷 기반 브라우저 */
+::-webkit-scrollbar {width: 10px;}/*스크롤바 크기*/
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}/*스크롤바 배경*/
+::-webkit-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+::-webkit-scrollbar-thumb:hover {background-color: #555;}
+/* header */
 header {
     background: aqua;
     width:calc(100% - 60px); /* full */
@@ -45,7 +59,7 @@ header .h_right #searchFrm #searchBtn {
 }
 header .h_right #searchFrm #searchBtn img {width: 100%;}
 header .h_right {}
-header .h_right a img {}
+header .h_right a img {width: 100%;}
 header .h_right .login,
 header .h_right .cart,
 header .h_right .nav {width:34px; height: 34px;}
@@ -55,3 +69,65 @@ header .h_right .cart {}
 header .h_right .cart img {width: 100%;}
 header .h_right .nav {}
 header .h_right .nav img {width: 100%;}
+/* open-nav */
+header #open_nav {
+    position:fixed; left:0; top:0; z-index:999;
+    width:100%; height:100vh;
+    background:#f1f1f1;
+    overflow-y:auto;
+    /* 웹브라우저 y축 기준으로 내용이 넘칠 경우 스크롤을 표시하고
+        넘치지 않다면 스크롤을 숨긴다. */
+}
+header #open_nav #nav_close {
+    width: 30px; height: 30px;
+    position: absolute;
+    top:94px; right: 200px;
+}
+header #open_nav #nav_close img {width: 100%;}
+/* swiper-slide nav-adver */
+header #open_nav #nav_adver {
+    max-width:800px; 
+    text-align: center; margin:33px auto;
+}
+header #open_nav #nav_adver .swiper-slide a {
+    line-height: 24px;
+}
+header #open_nav #nav_adver .swiper-button-prev,
+header #open_nav #nav_adver .swiper-button-next {
+    top:23px; width:24px; height:24px;
+}
+header #open_nav #nav_adver .swiper-button-prev {
+    background: url(../images/adver_prev.png);
+}
+header #open_nav #nav_adver .swiper-button-next {
+    background: url(../images/adver_next.png);
+}
+header #open_nav #nav_adver .swiper-button-prev::after,
+header #open_nav #nav_adver .swiper-button-next::after {display:none;}
+/* open-nav nav */
+header #open_nav nav {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    padding-top:40px;
+}
+header #open_nav nav a {
+    font-size: 3.157rem; font-weight: 700;
+    line-height: 100px; letter-spacing: -0.02em;
+}
+header #open_nav nav a:hover {
+    color:#EEE853; transform:scale(1.2)
+}
+@keyframes scale {
+    0%{transform:scale(1);}
+    100%{transform:scale(1.2);}
+}
+/* header #open_nav nav a::after {
+    content:''; display:block;
+    width:100%; height:1px; background:#222;
+    position:absolute; bottom:-1px;
+    transform:scaleX(0); transition:transform 0.5s;
+}
+header #open_nav nav a:hover::after {
+    transform:scaleX(1);
+} */
