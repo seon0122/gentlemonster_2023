@@ -1,0 +1,65 @@
+/* main */
+main {}
+/* main -1. visual */
+main .visual {
+    position: relative; overflow: hidden;
+    height:100vh;
+}
+main .visual .txt {
+    /* background: pink; */
+    position: absolute; top:40%;
+    text-align: center;
+    width: 100%; z-index:900;
+}
+main .visual .txt p {
+    font-size:2.369rem; letter-spacing: -0.02em;
+    color: #fff;
+}
+main .visual .txt h1 {
+    font-size: 3.157rem; font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 30px 0;
+}
+main .visual .txt .link {
+    /* background: lime; */
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+}
+main .visual .txt .link a {
+    font-size: 1.777rem; letter-spacing: -0.02em;
+    color:#fff;
+    border: 1px solid #fff; background:rgba(0,0,0,0.2);
+    transition:all 0.5s ease;
+}
+main .visual .txt .link a:first-child {
+    padding:20px 15px;
+}
+main .visual .txt .link a:last-child {
+    padding:20px 35px; margin-left: 10px;
+}
+main .visual .txt .link a:hover {
+    border:none; color:#222; background:#EEE853;
+}
+main .visual video {
+    width:100%;
+    /* 화면크기 조정 시 비디오 중심축 맞추기 */
+    /* 필수조건 ★ 비디오의 부모가 vh or px 높이 설정 준비!(% 절대x)*/
+    position:absolute; left:50%;
+    transform: translateX(-50%);
+    /* 방법3 절대크기값 */
+    /* width:1920px; */
+}
+/* 와이드 비율의 video 화면 전체 배치 시 여백 해결법 */
+/* 1. 반응형웹 @media 특정 해상도마다 비디오의 크기 설정값 변경 */
+/* 2. 가장 큰 데스크탑 기준으로 너비를 100%보다 크게 설정하고 넘치게 하는 방법 ==> 예) width:150% */
+/* 3. 상대크기가 아닌 절대크기값(px)로 크기를 설정해서 화면 해상도에 영향을 받지 않는 방법 */
+/* main 2-adver_bnr */
+main .adver_bnr {
+    background: url(../images/bnr.jpg);
+    height:300px;
+}
+main .adver_bnr .txt {}
+main .adver_bnr .txt p {}
+main .adver_bnr .txt h1 {}
+main .adver_bnr .txt .link {}
+main .adver_bnr .txt .link a {}
