@@ -57,9 +57,102 @@ main .visual video {
 main .adver_bnr {
     background: url(../images/bnr.jpg);
     height:300px;
+    transform: scaleX(-1);
 }
-main .adver_bnr .txt {}
-main .adver_bnr .txt p {}
-main .adver_bnr .txt h1 {}
-main .adver_bnr .txt .link {}
-main .adver_bnr .txt .link a {}
+main .adver_bnr .txt {/* background: aqua; */
+    /* contents width px */
+    max-width:1200px; margin:0 auto; 
+    text-align: left;
+    padding-top: 45px;
+    /* margin-left: 50px; */
+    transform: scaleX(-1);
+}
+main .adver_bnr .txt p {
+    font-size: 1.875rem; letter-spacing: -0.02em;
+}
+main .adver_bnr .txt h1 {
+    font-size:3.438rem; font-weight: 700; letter-spacing: -0.02em;
+    margin:30px 0;
+}
+main .adver_bnr .txt .link {/* background: lime; */
+    display: flex; flex-flow: row nowrap;
+    justify-content:flex-start;
+}
+main .adver_bnr .txt .link a {
+    font-size: 1.777rem; letter-spacing: -0.02em;
+    /* color:#fff; */
+    border: 1px solid #000; background:rgba(0,0,0,0.1);
+    transition: all 0.5s ease;
+}
+main .adver_bnr .txt .link a:hover {
+    border:none; color:#222; background:#EEE853;
+}
+main .adver_bnr .txt .link a:first-child {
+    padding:20px 45px; margin-right:20px;
+}
+main .adver_bnr .txt .link a:last-child {
+    padding:20px 35px;
+}
+/* txt width-pw, margin-top/ bg-position */
+/* 온라인서비스 */
+main #online_service {
+    background:url(../images/service_bg1.jpg) no-repeat;
+    background-size: 80%;
+    background-position: right center;
+    padding-top:63px;
+    margin-top: 70px;
+}
+main #online_service .txt,
+main #shop_service .txt {
+    width:827px;
+    background:#fff; 
+}
+main #online_service .txt {
+    padding: 55px 0 55px 95px;
+}
+main #online_service .txt h1,
+main #shop_service .txt h1 {
+    font-size:3.438rem; font-weight: 500; letter-spacing: -0.02em;
+}
+main #online_service .txt p,
+main #shop_service .txt p {
+    font-size:1.375rem; letter-spacing: -0.02em;
+    line-height:32px;
+    padding:40px 0;
+}
+main #online_service .txt .service_link {
+    display: inline-block;
+    font-size: 1.777rem; letter-spacing: -0.02em;
+    border: 1px solid #000; background:rgba(0,0,0,0.1);
+    padding:20px 45px;
+}
+/* 매장서비스 */
+main #shop_service {
+    background: url(../images/service_bg2.jpg) no-repeat;
+    background-size: 80%;
+    background-position: left center;
+    padding-top:63px;
+    margin-top:30px;
+    display: flex; flex-flow: row-reverse;
+}
+main #shop_service .txt {
+    right:50%;
+    text-align: right;
+    padding:55px 95px 55px 0;
+}
+main #shop_service .txt h1 {}
+main #shop_service .txt p {}
+main #shop_service .txt .shop_link {
+    display: inline-block;
+    font-size: 1.777rem; letter-spacing: -0.02em;
+    border: 1px solid #000; background:rgba(0,0,0,0.1);
+    padding:20px 35px;
+}
+main #online_service .txt .service_link,
+main #shop_service .txt .shop_link {
+    transition:all 0.5s ease;
+}
+main #online_service .txt .service_link:hover,
+main #shop_service .txt .shop_link:hover {
+    border:none; color:#222; background:#EEE853;
+}
