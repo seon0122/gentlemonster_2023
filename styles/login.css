@@ -1,0 +1,115 @@
+main {
+    /* background:aqua; */
+    max-width:700px; margin:0 auto;
+}
+/* 동일 버튼 */
+main .submit {
+    display: block; text-align: center;
+    padding: 30px 0;
+    font-size: 1.777rem; letter-spacing: -0.02em;
+    transition: all 0.3s ease;
+}
+main #loginFrm .login:hover,
+main .submit:hover {
+    background-color:#DEB52E; color:#fff;
+}
+main .join .join:hover {
+    border-color:#fff;
+}
+/* 로그인폼 양식 */
+main h1 {
+    margin:145px 0 50px;
+    font-size: 2.5rem; font-weight: 600; letter-spacing: -0.02em;
+    padding-bottom: 26px; 
+    border-bottom: 3px solid #000;
+}
+main #loginFrm {}
+main #loginFrm fieldset {}
+main #loginFrm fieldset > input {
+    width:700px;
+    padding:20px 0 20px 30px;
+    font-size:1.777rem; letter-spacing: -0.02em;
+    border:1px solid #A2A2A2;
+}
+main #loginFrm fieldset #id {}
+main #loginFrm fieldset #pw {margin:10px 0 25px;}
+main #loginFrm fieldset label {}
+/* checkbox 변경 */
+main #loginFrm fieldset label input {display:none;}
+main #loginFrm fieldset label span {
+    background:url(../images/unchecked.png) no-repeat;
+    display: inline-block; height:23px;
+    font-size:1.333rem; letter-spacing:-0.02em;
+    color:#2E2E2E; padding-left: 35px;
+}
+main #loginFrm fieldset label input:checked+span {
+    background:url(../images/Checkbox.png) no-repeat;
+}
+main #loginFrm .login {
+    background:#000;
+    margin:50px 0; color:#fff;
+}
+main #loginFrm .find {
+    display: flex; flex-flow: row nowrap;
+    justify-content:center;
+    padding-bottom: 50px; 
+    border-bottom: 1px solid #A2A2A2;
+}
+main #loginFrm .find a {
+    font-size: 1.333rem; letter-spacing: -0.02em;
+    color: #2E2E2E; text-align:center;
+}
+main #loginFrm .find a:first-child::after {
+    content:''; width:1px; height:20px;
+    display:inline-block; background:#A2A2A2;
+    margin:0 63px;
+}
+/* 가입 */
+main .join {}
+main .join h2,
+main .join h2 span {
+    font-size: 1.777rem; font-weight:500; letter-spacing:-0.02em;
+    margin:75px 0 50px; text-align:center;
+}
+main .join h2 span {color:#d31111;}
+main .join .join {border:1px solid #000; margin-bottom: 70px;}
+/* sns계정 */
+main .sns {
+    text-align: center; padding-bottom:70px;
+    border-bottom:1px solid #A2A2A2;
+}
+main .sns h2 {
+    font-size: 1.777rem; letter-spacing:-0.02em;
+    color:#5C5C5C; 
+    padding: 75px 0 50px; border-top:1px solid #D9D9D9;
+}
+main .sns a {
+    display:inline-block;
+    width:48px; height:48px;
+    text-indent:-9999px;
+    margin-right:30px;
+}
+main .sns a:nth-child(2) {
+    background:url(../images/naver.png);
+}
+main .sns a:nth-child(3) {
+    background:url(../images/kakao.png);
+}
+main .sns a:nth-child(4) {
+    background:url(../images/Facebook.png);
+}
+main .sns a:nth-child(5) {
+    background:url(../images/instagram.png);
+}
+main .sns a:nth-child(6) {
+    background:url(../images/google.png);
+}
+main .sns a:last-child {
+    background:url(../images/Apple.png);
+    margin-right:0;
+}
+/* 비회원주문조회 */
+main .nonMember {
+    background:#A2A2A2; color:#fff;
+    margin:75px 0 100px;
+}

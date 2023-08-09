@@ -116,7 +116,7 @@ header #open_nav nav a {
     line-height: 100px; letter-spacing: -0.02em;
 }
 header #open_nav nav a:hover {
-    color:#EEE853; transform:scale(1.2)
+    color:#DEB52E; transform:scale(1.2)
 }
 /* footer */
 footer {
