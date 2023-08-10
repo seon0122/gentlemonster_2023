@@ -49,6 +49,7 @@ main #loginFrm .login {
     background:#000;
     margin:50px 0; color:#fff;
 }
+/* id, pw 찾기 */
 main #loginFrm .find {
     display: flex; flex-flow: row nowrap;
     justify-content:center;
@@ -111,5 +112,5 @@ main .sns a:last-child {
 /* 비회원주문조회 */
 main .nonMember {
     background:#A2A2A2; color:#fff;
-    margin:75px 0 100px;
+    margin:75px 0 50px;
 }
