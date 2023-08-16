@@ -1,0 +1,8 @@
+#map {
+    background: aqua;
+    width:700px; height:500px; margin:50px auto;
+}
+main {text-align: center;}
+main h1 {font-size:45px; margin-top:50px; font-weight:700;}
+main p {line-height:40px; font-weight:500;}
+main p:nth-child(3) {font-size:23px;}
